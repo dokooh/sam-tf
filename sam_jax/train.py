@@ -29,7 +29,7 @@ from sam.sam_jax.training_utils import flax_training
 import tensorflow.compat.v2 as tf
 from tensorflow.io import gfile
 
-
+global image_size # issue with "UnboundLocalError: local variable 'image_size' referenced before assignment"
 FLAGS = flags.FLAGS
 
 flags.DEFINE_enum('dataset', 'cifar10', [
